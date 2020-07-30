@@ -8,13 +8,22 @@ import FRParentInput from './components/FRParentInput'
 import PortalDemo from './components/PortalDemo'
 import ClickCounter from './components/ClickCounter'
 import HoverCounter from './components/HoverCounter'
+import ComponentC from './components/ComponentC'
+import { userProvider } from './components/UserContext'
+import HTTPGet from './components/HTTPGet'
+import HTTPPost from './components/HTTPPost'
 
 
 function App() {
-  return (
+  return ( //Step 2:- Providing a context value
     <div className="App">
-      <HoverCounter />
-      <ClickCounter />
+      <HTTPPost />
+      {/* <HTTPGet /> */}
+      {/* <userProvider value="Danish">
+        <ComponentC />
+      </userProvider> */}
+      {/* <HoverCounter />
+      <ClickCounter /> */}
       {/* <PortalDemo /> */}
       {/* <LifecycleA /> */}
       {/* <FocusInput /> */}
